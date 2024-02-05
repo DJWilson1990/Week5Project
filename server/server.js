@@ -1,12 +1,12 @@
 // Set up for server side
-
 import express from "express";
 import cors from "cors";
 import Database from "better-sqlite3";
+app.disable('x-powered-by')
 
-const app = express();
 app.use(cors());
 app.use(express.json());
+const app = express();
 const db = new Database("database.db");
 
 const PORT = "2020";
@@ -41,3 +41,4 @@ app.get("/scoreBoard", (req, res) => {
     res.status(500).json(err);
   }
 });
+
