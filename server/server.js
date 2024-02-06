@@ -11,17 +11,19 @@ const db = new Database("database.db");
 
 const PORT = "2020";
 app.listen(PORT, () => {
-  console.log(`Server is live on port: http://localhost:${PORT}}`);
+  console.log(`Server is live on port: ${PORT}`);
 });
+
+//test
 
 // Creating GET and POST so we can test database
 
 // POST
-
+// POST request: username and score data to be sent to database. username and score data taken from game play
 app.post("/scoreBoard", (req, res) => {
   try {
     const username = req.body.username;
-    const score = req.body.message;
+    const score = req.body.score;
     const newScore = db
       .prepare(`INSERT INTO scoreBoard (username, score) VALUES(?, ?)`)
       .run(username, score);
@@ -32,7 +34,7 @@ app.post("/scoreBoard", (req, res) => {
 });
 
 //GET
-
+// GET request: username and score to be taken from database - to be displayed on leader board
 app.get("/scoreBoard", (req, res) => {
   try {
     let scoreBoard = db.prepare(`SELECT * FROM scoreBoard`).all();
