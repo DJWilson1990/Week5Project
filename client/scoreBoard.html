@@ -14,7 +14,7 @@
     <header>
       <div class="navBar-container">
         <div class="title-container">
-          <h1>Week 5 Project</h1>
+          <h1></h1>
         </div>
         <nav class="navBar-selector">
           <a href="index.html">HOME</a>
@@ -25,13 +25,15 @@
     </header>
 
     <!-- div container for score board and message board to put flex layout on -->
-    <div class="score-message-container"></div>
+    <div class="scoreMessageContainer"></div>
+    
     <!-- setting up div containers for score board -->
       <div class="table-container">
-        <header>TOP SCORES</header>
         <table id="leader-board">
           <tr>
+            <th>RANK</th>
             <th>NAME</th>
+            <th>LEVEL</th>
             <th>SCORE</th>
           </tr>
         </table>
@@ -51,14 +53,12 @@
           />
           <label for="message" id="message-label">YOUR MESSAGE</label>
           <textarea
-            name="message"
             id="message-content"
             placeholder="Enter your message here"
             required
           ></textarea>
           <input type="submit" value="Send Message" id="submit-button" />
         </form>
-        <header id="posted-messages">MESSAGES</header>
         <ul id="message-list"></ul>
       </div>
     </div>
