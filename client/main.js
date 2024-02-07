@@ -1,5 +1,5 @@
 // setting up consts
-const playButton = document.getElementsByClassName("start-game-button");
+const playButton = document.getElementsByClassName("btnStart-game-button");
 const playerScore = document.getElementsByClassName("player-score");
 const playerName = document.getElementsByClassName("player-username");
 const playerInfo = document.getElementsByClassName("username-entry");
