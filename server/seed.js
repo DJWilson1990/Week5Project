@@ -10,3 +10,9 @@ db.exec(`CREATE TABLE IF NOT EXISTS scoreBoard (
     username TEXT,
     score INTEGER    
 )`);
+
+db.exec(`CREATE TABLE IF NOT EXISTS messageBoard (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT,
+    message TEXT
+)`);
