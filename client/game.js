@@ -53,7 +53,7 @@ divs.forEach((elem) => { // getting each element from the
 function rest() { // rest the timeout, so is gonna be more fast the game and write 
   data.timeout -= 100
   data.lvl += 1
-  nextLvl.innerHTML = `Level ${data.lvl} this is the speed 0.${data.timeout}seconds`
+  nextLvl.innerHTML = `Level ${data.lvl}`
 }
 
 function updateTable() { // updaitin the info in the HTML
