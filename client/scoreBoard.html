@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/main.js" defer></script>
+    <script type="module" src="/scoreBoard.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>Week 5 Project</title>
   </head>
@@ -24,14 +24,42 @@
       </div>
     </header>
 
+    <!-- div container for score board and message board to put flex layout on -->
+    <div class="score-message-container"></div>
     <!-- setting up div containers for score board -->
+      <div class="table-container">
+        <header>TOP SCORES</header>
+        <table id="leader-board">
+          <tr>
+            <th>NAME</th>
+            <th>SCORE</th>
+          </tr>
+        </table>
+      </div>
 
-    <div class="scoreBoard-container">
-      <p class="scoreBoard-header">LEADER BOARD TOP 10</p>
-      <div class="top-score-container">
-        <ul>
-          will have top 10 scores in this list
-        </ul>
+      <!-- setting up message board container -->
+      <div id="form-container">
+        <p class="form-header">Message Board</p>
+        <form id="message-form">
+          <label for="username" id="username-label">ENTER USERNAME</label>
+          <input
+            type="text"
+            name="username"
+            id="username-input"
+            placeholder="Enter username"
+            required
+          />
+          <label for="message" id="message-label">YOUR MESSAGE</label>
+          <textarea
+            name="message"
+            id="message-content"
+            placeholder="Enter your message here"
+            required
+          ></textarea>
+          <input type="submit" value="Send Message" id="submit-button" />
+        </form>
+        <header id="posted-messages">MESSAGES</header>
+        <ul id="message-list"></ul>
       </div>
     </div>
   </body>
