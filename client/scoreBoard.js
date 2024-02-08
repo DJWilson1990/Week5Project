@@ -1,5 +1,5 @@
-// const baseURL = `http://localhost:2020`;
-const baseURL = `https://teamproject-clickgame-server.onrender.com`;
+const baseURL = `http://localhost:2020`;
+// const baseURL = `https://teamproject-clickgame-server.onrender.com`;
 
 /////////////////////////////////////////////FOR SCORE BOARD////////////////////////////////////////////////////////
 
