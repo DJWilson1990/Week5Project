@@ -7,6 +7,8 @@ const btnReset = document.querySelector("#btn-reset");
 const nextLvl = document.querySelector("#nextLvl");
 const divs = document.querySelectorAll(".div"); // taking all the class divs and saving them in the variable divs
 const arraDivs = Array.from(divs); // placing the divs inside an array
+const username = document.getElementById(`username`);
+const usernameForm = document.getElementById(`username-form`);
 
 let stopInterval = null; // This variable is a the scope
 let stopGame = null;
@@ -16,7 +18,8 @@ const data = {
   INTERVAL: 1000,
   timeout: 900,
   playerScore: 0,
-  lvl: 0,
+  level: 0,
+  username: "?????",
 };
 
 btnStart.addEventListener("click", (e) => start());
@@ -24,7 +27,7 @@ btnReset.addEventListener("click", (e) => reset());
 btnSpeed.addEventListener("click", (e) => rest());
 
 function start() {
-  console.log("starh the game,", data);
+  console.log("start the game,", data);
   if (stopInterval) return;
 
   stopGame = setTimeout(async () => {
@@ -33,8 +36,8 @@ function start() {
     await saveScore();
     reset(); //
     stopInterval = null;
-  }, 1 * 60 * 1000);
-  // }, 1 * 5 * 1000);
+    // }, 1 * 60 * 1000);
+  }, 1 * 5 * 1000);
 
   stopInterval = setInterval(() => {
     const random = Math.floor(Math.random() * divs.length);
@@ -62,8 +65,8 @@ divs.forEach((elem) => {
 function rest() {
   // rest the timeout, so is gonna be more fast the game and write
   data.timeout -= 100;
-  data.lvl += 1;
-  nextLvl.innerHTML = `Level ${data.lvl} this is the speed 0.${data.timeout}seconds`;
+  data.level += 1;
+  nextLvl.innerHTML = `Level ${data.level} this is the speed 0.${data.timeout}seconds`;
 }
 
 function updateTable() {
@@ -75,7 +78,7 @@ function reset() {
   // reset the the info of data 2. updatetable the html 3. stop the setinterval
   data.timeout = 900;
   data.playerScore = 0;
-  data.lvl = 0;
+  data.level = 0;
   updateTable();
   clearInterval(stopInterval);
   clearTimeout(stopGame);
@@ -85,8 +88,19 @@ function reset() {
 }
 
 ///////////////////////////////FOR SERVER////////////////////////////////////////
+
+// usernameForm.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   const messageData = new FormData(usernameForm);
+//   data.username = messageData.username;
+// });
+
 async function saveScore() {
-  let scoreInfo = { username: "??????", score: `${data.playerScore}` };
+  let scoreInfo = {
+    username: `${data.username}`,
+    score: `${data.playerScore}`,
+    level: `${data.level}`,
+  };
   const response = await fetch(`${baseURL}/scoreBoard`, {
     method: "POST",
     headers: {

@@ -5,7 +5,7 @@ const baseURL = `http://localhost:2020`;
 const leaderBoard = document.getElementById(`leader-board`);
 
 const topScores = await getScoreBoard(5);
-// setting scoreboard to show 10 results
+// setting scoreboard to show 5 results
 for (let index = 0; index < topScores.length; index++) {
   let tableRow = document.createElement(`tr`);
   let tableName = document.createElement(`td`);
@@ -13,7 +13,7 @@ for (let index = 0; index < topScores.length; index++) {
   let tableLevel = document.createElement(`td`);
   tableName.textContent = topScores[index].username;
   tableScore.textContent = topScores[index].score;
-  tableLevel.textContent = topscores[index].level;
+  tableLevel.textContent = topScores[index].level;
   tableRow.append(tableName);
   tableRow.append(tableScore);
   tableRow.append(tableLevel);
