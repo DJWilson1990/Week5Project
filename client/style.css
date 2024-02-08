@@ -243,41 +243,86 @@ footer {
 /*staying for scoreboard*/
 
 .table-container {
-display: grid;
-grid-template-columns:repeat(2, 1fr);
-width :300px;
-}
-#form-container {
-  width: 26rem;
-  height: 15rem;
-  background: rgb(218, 218, 63);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 100px 100px 100px 10px;
-  margin-top:auto;
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 18px;
-}
-
-.navBar-selector {
-  float: right;
-  padding: 15px;
-}
-
-#leader-board {
   display: grid;
-  grid-template-columns: 1fr fr;
-  width:300px;
-}
-th, td{
-  padding-top: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 40px;
+  grid-template-columns:repeat(2, 1fr);
+  width :300px;
+  justify-items: normal;
   }
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  #form-container {
+    width: 500px;
+    height: 500px;
+    background: rgb(218, 218, 63);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 100px 100px 10px;
+    margin: top 200px;;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    columns:3;
+    gap: 100px ;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px;
+    gap: 20px;
+    
+}
+  
+  
+  .navBar-selector {
+    float: right;
+    padding: 15px;
+  }
+  
+  #leader-board {
+    display: grid;
+    grid-template-columns: 1fr fr;
+    width: 100px;
+    height: 15rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 100px 100px 10px;
+    margin-top:auto;
+    bottom: 8px;
+  
+    
+    
+  }
+  th, td{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+    }
+    
+    td, th {
+      border: 1px solid;
+    }
+  
+    
+   tr:nth-child(even){background-color: black;}
+    
 
+   body {
+    background-color: antiquewhite;
+    font-family: 'Protest Riot', sans-serif;
+   }
 
