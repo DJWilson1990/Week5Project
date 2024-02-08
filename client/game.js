@@ -36,11 +36,8 @@ function start() {
     await saveScore();
     reset(); //
     stopInterval = null;
-
-
   }, 1 * 30 * 1000);
   // }, 1 * 5 * 1000);
-
 
   stopInterval = setInterval(() => {
     const random = Math.floor(Math.random() * divs.length);
@@ -62,16 +59,14 @@ divs.forEach((elem) => {
       data.playerScore += 1;
       updateTable();
     }
-  })
-})
+  });
+});
 
-
-
-function rest() { // rest the timeout, so is gonna be more fast the game and write 
-  data.timeout -= 100
-  data.level += 1
-  nextLvl.innerHTML = `Level ${data.level}`
-
+function rest() {
+  // rest the timeout, so is gonna be more fast the game and write
+  data.timeout -= 100;
+  data.level += 1;
+  nextLvl.innerHTML = `Level ${data.level}`;
 }
 
 function updateTable() {
@@ -106,6 +101,7 @@ async function saveScore() {
     score: `${data.playerScore}`,
     level: `${data.level}`,
   };
+
   const response = await fetch(`${baseURL}/scoreBoard`, {
     method: "POST",
     headers: {
