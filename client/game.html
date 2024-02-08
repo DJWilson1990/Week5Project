@@ -6,33 +6,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="game.css" />
     <script defer src="game.js"></script>
-  </head>
-  <form id="username-form">
+
+
+
+ 
+
+</head>
+
+<body>
+    <header>
+        <nav class="header__nav">
+            <h1 class="header__nav--title">Arcade game</h1>
+            <ul class="header__nav--ul">
+                <li><a href="scoreBoard.html" class="header__nav--a">score board</a></li>
+                <li><a href="index.html" class="header__nav--a">Game</a></li>
+                <li><a href="#" class="header__nav--a">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <form id="username-form">
     <label for="username">Username:</label><br />
     <input type="text" id="username" name="username" /><br /><br />
     <input type="submit" value="Submit" />
   </form>
+ 
 
-  <body>
-    <main>
-      <section class="main__section1">
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-        <div class="div"></div>
-      </section>
+        <section class="main__section2">
+            <p class="p p--playerScore" id="playerScore">0</p>
+            <p class="p p--nextLvl" id="nextLvl"></p>
+        </section>
 
-      <section class="main__section2">
-        <p class="p p--playerScore" id="playerScore">0</p>
-        <p class="p p--nextLvl" id="nextLvl">
-          `Level ${data.lvl} this is the speed 0.${data.timeout}seconds`
-        </p>
-      </section>
+        <section class="main__section1">
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+        </section>
+
+
+   
 
       <section class="main__section3">
         <button class="btn btn--Start" id="btn-btnStart">Start</button>
