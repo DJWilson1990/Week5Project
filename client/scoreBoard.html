@@ -24,40 +24,42 @@
 
     <!-- div container for score board and message board to put flex layout on -->
     <div class="scoreMessageContainer"></div>
-    
-    <!-- setting up div containers for score board -->
-      <div class="table-container">
-        <table id="leader-board">
-          <tr>
-            <th>NAME</th>
-            <th>LEVEL</th>
-            <th>SCORE</th>
-          </tr>
-        </table>
-      </div>
 
-      <!-- setting up message board container -->
-      <div id="form-container">
-        <p class="form-header">Start a conversation! </p>
-        <form id="message-form">
-          <label for="username" id="username-label">ENTER USERNAME</label>
-          <input
-            type="text"
-            name="username"
-            id="username-input"
-            placeholder="Enter username"
-            required
-          />
-          <label for="message" id="message-label">YOUR MESSAGE</label>
-          <textarea
-            id="message-content"
-            placeholder="Enter your message here"
-            required
-          ></textarea>
-          <input type="submit" value="Send Message" id="submit-button" />
-        </form>
-        <ul id="message-list"></ul>
-      </div>
+    <!-- setting up div containers for score board -->
+
+
+    <div class="table-container">
+      <table id="leader-board">
+        <tr>
+          <th>NAME</th>
+          <th>SCORE</th>
+          <th>LEVEL</th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- setting up message board container -->
+    <div id="form-container">
+      <p class="form-header">Message Board</p>
+      <form id="message-form">
+        <label for="username" id="username-label">ENTER USERNAME</label>
+        <input
+          type="text"
+          name="username"
+          id="username-input"
+          placeholder="Enter username"
+          required
+        />
+        <label for="message" id="message-label">YOUR MESSAGE</label>
+        <textarea
+          id="message-content"
+          placeholder="Enter your message here"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" id="submit-button" />
+      </form>
+      <ul id="message-list"></ul>
+
     </div>
   </body>
 </html>

@@ -2,18 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="game.css" />
     <script defer src="game.js"></script>
 </head>
-<form action="/action_page.php">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  
 
 <body>
     <header>
@@ -28,6 +22,12 @@
     </header>
 
     <main>
+        <form class="form" id="username-form">
+            <label for="username">Username:</label><br />
+            <input class="form__bar" type="text" id="username" name="username" /><br /><br />
+            <input class="form__submit" type="submit" value="Submit" />
+        </form>
+
 
         <section class="main__section2">
             <p class="p p--playerScore" id="playerScore">0</p>
@@ -46,13 +46,11 @@
             <div class="div"></div>
         </section>
 
-
         <section class="main__section3">
             <button class="btn btn--Start" id="btn-btnStart">Start</button>
             <button class="btn btn--Speed" id="btn-btnSpeed">Next level</button>
             <button class="btn btn--Reset" id="btn-reset">reset</button>
         </section>
-
     </main>
 </body>
 
