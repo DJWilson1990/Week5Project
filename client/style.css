@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
 
 * {
   margin: 0px;
@@ -6,12 +6,12 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Protest Riot', sans-serif;
+  font-family: "Protest Riot", sans-serif;
 }
 
 /* colors for the page */
 :root {
-  --text-color: #9370DB;
+  --text-color: #9370db;
   --text-color-hover: #fff;
 }
 
@@ -47,7 +47,6 @@ body {
 .header__nav--ul * {
   display: inline;
   margin-left: 10px;
-
 }
 
 .header__nav--a {
@@ -131,10 +130,14 @@ body {
   box-shadow: 0px 0px 25px 0px purple;
   letter-spacing: 1px;
   font-size: 20px;
-  background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  background-image: linear-gradient(
+    to top,
+    #dad4ec 0%,
+    #dad4ec 1%,
+    #f3e7e9 100%
+  );
   color: var(--text-color);
   position: relative;
-
 }
 
 .section3__btn:hover {
@@ -177,7 +180,6 @@ span {
   font-size: 18px;
 }
 
-
 /* ------------------------------------------------------------------------------------------------------------*/
 /* FOOTER */
 /* ------------------------------------------------------------------------------------------------------------*/
@@ -215,11 +217,11 @@ footer {
 }
 
 .bxl-github {
-  color: #000
+  color: #000;
 }
 .light {
-  height:100px;
-  width:100px;
+  height: 100px;
+  width: 100px;
   border: 1px solid blue;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -228,8 +230,8 @@ footer {
   text-align: center;
 }
 .selectedLight {
-  height:100px;
-  width:100px;
+  height: 100px;
+  width: 100px;
   border: 1px solid rgb(255, 123, 0);
   border-radius: 50px;
   background-color: chartreuse;
@@ -237,15 +239,15 @@ footer {
 #game-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196F3;
+  background-color: #2196f3;
   padding: 10px;
 }
 /*staying for scoreboard*/
 
 .table-container {
-display: grid;
-grid-template-columns:repeat(2, 1fr);
-width :300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 300px;
 }
 #form-container {
   width: 26rem;
@@ -256,7 +258,7 @@ width :300px;
   justify-content: center;
   flex-direction: column;
   padding: 100px 100px 100px 10px;
-  margin-top:auto;
+  margin-top: auto;
   position: absolute;
   bottom: 8px;
   left: 16px;
@@ -271,13 +273,12 @@ width :300px;
 #leader-board {
   display: grid;
   grid-template-columns: 1fr fr;
-  width:300px;
+  width: 300px;
 }
-th, td{
+th,
+td {
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 40px;
-  }
-
-
+}
