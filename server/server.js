@@ -14,6 +14,23 @@ app.listen(PORT, () => {
   console.log(`Server is live on port: ${PORT}`);
 });
 
+//
+
+// Creating table for database
+
+db.exec(`CREATE TABLE IF NOT EXISTS scoreBoard (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT,
+  score INTEGER,
+  level INTEGER    
+)`);
+
+db.exec(`CREATE TABLE IF NOT EXISTS messageBoard (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT,
+  message TEXT
+)`);
+
 //////////////////////////////////////////////SCOREBOARD////////////////////////////////////////////////////////////
 
 // Creating GET and POST so we can test database
