@@ -38,7 +38,7 @@ function start() {
     stopInterval = null;
 
 
- }, 1 * 30 * 1000);
+  }, 1 * 30 * 1000);
   // }, 1 * 5 * 1000);
 
 
@@ -69,8 +69,8 @@ divs.forEach((elem) => {
 
 function rest() { // rest the timeout, so is gonna be more fast the game and write 
   data.timeout -= 100
-  data.lvl += 1
-  nextLvl.innerHTML = `Level ${data.lvl}`
+  data.level += 1
+  nextLvl.innerHTML = `Level ${data.level}`
 
 }
 
