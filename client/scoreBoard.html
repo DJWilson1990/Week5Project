@@ -12,22 +12,22 @@
     <!-- nav bar container -->
 
     <header>
-      <div class="navBar-container">
-        <div class="title-container">
-          <h1></h1>
-        </div>
-        <nav class="navBar-selector">
-          <a href="index.html">HOME</a>
-          <a href="gamePage.html">GAME</a>
-          <a href="scoreBoard.html">SCORE BOARD</a>
-        </nav>
-      </div>
-    </header>
+      <nav class="header__nav">
+          <h1 class="header__nav--title">Arcade game</h1>
+          <ul class="header__nav--ul">
+              <li><a href="scoreBoard.html" class="header__nav--a">score board</a></li>
+              <li><a href="index.html" class="header__nav--a">Game</a></li>
+              <li><a href="#" class="header__nav--a">Contact us</a></li>
+          </ul>
+      </nav>
+  </header>
 
     <!-- div container for score board and message board to put flex layout on -->
     <div class="scoreMessageContainer"></div>
 
     <!-- setting up div containers for score board -->
+
+
     <div class="table-container">
       <table id="leader-board">
         <tr>
@@ -59,6 +59,7 @@
         <input type="submit" value="Send Message" id="submit-button" />
       </form>
       <ul id="message-list"></ul>
+
     </div>
   </body>
 </html>
