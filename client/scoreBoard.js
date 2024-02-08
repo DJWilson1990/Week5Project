@@ -10,10 +10,13 @@ for (let index = 0; index < topScores.length; index++) {
   let tableRow = document.createElement(`tr`);
   let tableName = document.createElement(`td`);
   let tableScore = document.createElement(`td`);
+  let tableLevel = document.createElement(`td`);
   tableName.textContent = topScores[index].username;
   tableScore.textContent = topScores[index].score;
+  tableLevel.textContent = topscores[index].level;
   tableRow.append(tableName);
   tableRow.append(tableScore);
+  tableRow.append(tableLevel);
   leaderBoard.append(tableRow);
 }
 

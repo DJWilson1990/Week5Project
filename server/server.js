@@ -24,9 +24,12 @@ app.post("/scoreBoard", (req, res) => {
   try {
     const username = req.body.username;
     const score = req.body.score;
+    const level = req.body.level;
     const newScore = db
-      .prepare(`INSERT INTO scoreBoard (username, score) VALUES(?, ?)`)
-      .run(username, score);
+      .prepare(
+        `INSERT INTO scoreBoard (username, score, level) VALUES(?, ?, ?)`
+      )
+      .run(username, score, level);
     res.status(200).json({ message: newScore });
   } catch (err) {
     res.status(500).json({ error: err });
