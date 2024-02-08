@@ -217,3 +217,67 @@ footer {
 .bxl-github {
   color: #000
 }
+.light {
+  height:100px;
+  width:100px;
+  border: 1px solid blue;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.selectedLight {
+  height:100px;
+  width:100px;
+  border: 1px solid rgb(255, 123, 0);
+  border-radius: 50px;
+  background-color: chartreuse;
+}
+#game-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+/*staying for scoreboard*/
+
+.table-container {
+display: grid;
+grid-template-columns:repeat(2, 1fr);
+width :300px;
+}
+#form-container {
+  width: 26rem;
+  height: 15rem;
+  background: rgb(218, 218, 63);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 100px 100px 10px;
+  margin-top:auto;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.navBar-selector {
+  float: right;
+  padding: 15px;
+}
+
+#leader-board {
+  display: grid;
+  grid-template-columns: 1fr fr;
+  width:300px;
+}
+th, td{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  }
+
+

@@ -8,7 +8,8 @@ const db = new Database("database.db");
 db.exec(`CREATE TABLE IF NOT EXISTS scoreBoard (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT,
-    score INTEGER    
+    score INTEGER,
+    level INTEGER    
 )`);
 
 db.exec(`CREATE TABLE IF NOT EXISTS messageBoard (
