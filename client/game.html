@@ -16,7 +16,24 @@
   
 
 <body>
+    <header>
+        <nav class="header__nav">
+            <h1 class="header__nav--title">Arcade game</h1>
+            <ul class="header__nav--ul">
+                <li><a href="scoreBoard.html" class="header__nav--a">score board</a></li>
+                <li><a href="index.html" class="header__nav--a">Game</a></li>
+                <li><a href="#" class="header__nav--a">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
+
+        <section class="main__section2">
+            <p class="p p--playerScore" id="playerScore">0</p>
+            <p class="p p--nextLvl" id="nextLvl"></p>
+        </section>
+
         <section class="main__section1">
             <div class="div"></div>
             <div class="div"></div>
@@ -29,10 +46,6 @@
             <div class="div"></div>
         </section>
 
-        <section class="main__section2">
-            <p class="p p--playerScore" id="playerScore">0</p>
-            <p class="p p--nextLvl" id="nextLvl">`Level ${data.lvl} this is the speed 0.${data.timeout}seconds`</p>
-        </section>
 
         <section class="main__section3">
             <button class="btn btn--Start" id="btn-btnStart">Start</button>

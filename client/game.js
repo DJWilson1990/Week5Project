@@ -56,14 +56,13 @@ divs.forEach((elem) => {
       data.playerScore += 1;
       updateTable();
     }
-  });
-});
+  })
+})
 
-function rest() {
-  // rest the timeout, so is gonna be more fast the game and write
-  data.timeout -= 100;
-  data.lvl += 1;
-  nextLvl.innerHTML = `Level ${data.lvl} this is the speed 0.${data.timeout}seconds`;
+function rest() { // rest the timeout, so is gonna be more fast the game and write 
+  data.timeout -= 100
+  data.lvl += 1
+  nextLvl.innerHTML = `Level ${data.lvl}`
 }
 
 function updateTable() {
