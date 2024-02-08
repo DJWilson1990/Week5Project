@@ -33,8 +33,8 @@ function start() {
     await saveScore();
     reset(); //
     stopInterval = null;
-    // }, 1 * 60 * 1000);
-  }, 1 * 5 * 1000);
+  }, 1 * 60 * 1000);
+  // }, 1 * 5 * 1000);
 
   stopInterval = setInterval(() => {
     const random = Math.floor(Math.random() * divs.length);
