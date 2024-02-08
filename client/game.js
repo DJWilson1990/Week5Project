@@ -33,7 +33,7 @@ function start() {
     await saveScore();
     reset(); //
     stopInterval = null;
-  }, 1 * 60 * 1000);
+  }, 1 * 30 * 1000);
   // }, 1 * 5 * 1000);
 
   stopInterval = setInterval(() => {

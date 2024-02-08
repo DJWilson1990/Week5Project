@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="game.css">
     <script defer src="game.js"></script>
 </head>
-<form action="/action_page.php">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-  
 
 <body>
     <header>
@@ -28,6 +22,14 @@
     </header>
 
     <main>
+
+        <section class="section__form">
+            <form class="form" action="/action_page.php">
+                <label for="username">Username:</label><br>
+                <input placeholder="usurname" class="form__bar" type="text" id="username" name="username"><br><br>
+                <input class="form__submit" type="submit" value="Submit">
+            </form>
+        </section>
 
         <section class="main__section2">
             <p class="p p--playerScore" id="playerScore">0</p>
